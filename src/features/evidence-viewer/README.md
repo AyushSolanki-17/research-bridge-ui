@@ -1,5 +1,9 @@
-# evidence-viewer
+# Evidence viewer
 
-Evidence references, typed edge details, provenance and uncertainty presentation.
+Owns the `EvidenceRecord` display contract and `EvidencePanel` attribution view.
+The record retains evidence identity, provider record, observation time, source URL
+and inference status. Only HTTP(S) source links become clickable; external links
+are named and open with opener isolation.
 
-Use `domain/`, `application/`, `infrastructure/`, and `interfaces/` when needed. Components/hooks belong in interfaces; API mapping belongs in infrastructure. Add intentional `index.ts` exports with implementation. See [architecture](../../../docs/architecture.md).
+Composition passes the selected paper or citation attribution from the explorer.
+The viewer does not import the explorer or transport models.

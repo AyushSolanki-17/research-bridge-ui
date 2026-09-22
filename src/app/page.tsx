@@ -1,6 +1,6 @@
-import { SeedEntry } from "@/features/research-explorer/interfaces/SeedEntry";
+import { ResearchJourney } from "@/composition/ResearchJourney";
 
-/** Composes the research entry screen while transport integration is pending. */
+/** Compose the citation explorer and its source-evidence inspection journey. */
 export default function Home() {
   return (
     <main className="mx-auto min-h-screen max-w-3xl px-6 py-16">
@@ -9,7 +9,7 @@ export default function Home() {
       <p className="mt-6 max-w-xl text-lg leading-8 text-slate-600">
         Explore citation relationships and inspect the source evidence behind them.
       </p>
-      <SeedEntry />
+      <ResearchJourney />
     </main>
   );
 }

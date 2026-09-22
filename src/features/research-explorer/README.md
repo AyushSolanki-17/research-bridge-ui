@@ -1,10 +1,20 @@
-# research-explorer
+# Research explorer
 
-Seed lookup, selected research work and bounded graph navigation.
+Owns title search, identifier lookup, explicit candidate selection, bounded citation
+scope, graph/list selection and completeness diagnostics.
 
-Use `domain/`, `application/`, `infrastructure/`, and `interfaces/` when needed. Components/hooks belong in interfaces; API mapping belongs in infrastructure. Add intentional `index.ts` exports with implementation. See [architecture](../../../docs/architecture.md).
+- `domain/exploration.ts`: presentation projections, not backend business models.
+- `application/research-gateway.ts`: cancellable research-operation port.
+- `infrastructure/research-api.ts`: generated-client calls and DTO translation,
+  including partial search/graph payloads returned with HTTP errors.
+- `interfaces/`: forms, request lifecycle, graph/list rendering and paper inspection.
 
-`interfaces/SeedEntry.tsx` collects a paper title or identifier and reviews a local
-direction/depth draft. It performs no lookup, identifier validation, candidate
-selection or traversal. Backend interactions require the contract described in
-`contracts/README.md`; no transport models or synthetic research results are supplied.
+`SeedEntry` accepts a gateway and an evidence callback. Composition supplies the
+adapter and joins the independent evidence viewer. The only cross-feature domain
+contract is `EvidenceRecord`, owned by the evidence viewer. No reciprocal import exists.
+Input changes invalidate dependent results; one active AbortController prevents
+cancelled or superseded responses from replacing current state.
+
+The backend owns identifier normalization, title search, filter matching and traversal.
+The browser forwards arbitrary input, shows explicit candidate selection, and displays
+the returned scope, stop reasons, unresolved references and metadata/page gaps.

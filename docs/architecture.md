@@ -1,6 +1,6 @@
 # Architecture
 
-Status: configured Next.js application with a local seed-entry/scope-review screen, process health route, npm lockfile, production build, ESLint/TypeScript checks and browser smoke tests. Paper lookup, citation traversal and evidence inspection await the backend contract. See [runtime commands](../README.md).
+Status: Next.js application with a citation explorer, same-origin research proxy, source-evidence inspection, generated contract types and controlled production-browser journeys. The pinned schema is an unreleased snapshot; published-contract compatibility and live provider verification remain pending. See [runtime commands](../README.md).
 
 ```text
 src/
@@ -33,7 +33,7 @@ Preserve edge types, evidence identifiers, explicit inference, unknown confidenc
 
 ## Implementation and verification
 
-Start with seed → graph → evidence against the Research Bridge AI API. Pin the backend schema and generate the client reproducibly. The bootstrap includes type/lint checks, a production build and browser smoke tests. Add feature interaction tests, contract verification, keyboard/accessibility checks and the critical research journey with those features. Keep secrets out of browser bundles, serialized props, source maps and public environment variables.
+The seed → graph → evidence journey consumes a pinned temporary Research Bridge AI schema. Generated transport types stay in feature infrastructure; composition owns the gateway and evidence selection. Contract verification, type/lint checks, production builds and deterministic browser journeys cover the implemented flow. Obtain a published schema before claiming release compatibility. Keep secrets out of browser bundles, serialized props, source maps and public environment variables.
 
 Reserve `packages/` for a demonstrably independently reusable library with its own exports, build and consumers. Keep ordinary feature code, visual primitives and the generated client in `src/` until that extraction is justified.
 

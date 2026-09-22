@@ -7,10 +7,15 @@ export default defineConfig({
   reporter: "list",
   use: { baseURL: "http://127.0.0.1:3000", trace: "retain-on-failure" },
   projects: [{ name: "chromium", use: { ...devices["Desktop Chrome"] } }],
-  webServer: {
+  webServer: [{
+    command: "node tests/fixtures/server.mjs",
+    url: "http://127.0.0.1:4010/health",
+    reuseExistingServer: false,
+  }, {
     command: "npm run start",
+    env: { RESEARCH_BRIDGE_API_URL: "http://127.0.0.1:4010" },
     url: "http://127.0.0.1:3000/health",
     reuseExistingServer: false,
     timeout: 60_000,
-  },
+  }],
 });

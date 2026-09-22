@@ -9,12 +9,15 @@
     "lint": "eslint . --max-warnings 0",
     "typecheck": "next typegen && tsc --noEmit",
     "test": "playwright test",
-    "check": "npm run lint && npm run typecheck && npm run build && npm test",
+    "check": "npm run check:contract && npm run lint && npm run typecheck && npm run build && npm test",
     "setup": "npm ci && python3 scripts/install_hooks.py",
-    "check:governance": "python3 scripts/check_duplicates.py"
+    "check:governance": "python3 scripts/check_duplicates.py",
+    "generate:client": "node scripts/generate-client.mjs",
+    "check:contract": "node scripts/generate-client.mjs --check && node scripts/check-fixtures.mjs"
   },
   "dependencies": {
     "next": "16.3.4",
+    "openapi-fetch": "0.17.0",
     "react": "19.2.8",
     "react-dom": "19.2.8"
   },
@@ -24,8 +27,11 @@
     "@types/node": "^24",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "ajv": "8.20.0",
+    "ajv-formats": "3.0.1",
     "eslint": "9.39.5",
     "eslint-config-next": "16.3.4",
+    "openapi-typescript": "7.13.0",
     "tailwindcss": "^4",
     "typescript": "^5"
   },

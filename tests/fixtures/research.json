@@ -1,0 +1,668 @@
+{
+  "search": {
+    "path": "/v1/papers/search",
+    "status": 200,
+    "body": {
+      "query": "Synthetic",
+      "page": 1,
+      "candidates": [
+        {
+          "paper": {
+            "identifiers": {
+              "openalex_id": {
+                "value": "W1001"
+              },
+              "doi": null
+            },
+            "title": "Synthetic seed paper",
+            "publication_date": "2024-01-01",
+            "authors": [
+              {
+                "display_name": "Alex Researcher"
+              }
+            ],
+            "venue": {
+              "display_name": "Synthetic Journal"
+            },
+            "abstract": null,
+            "cited_by_count": 0,
+            "topics": [
+              {
+                "id": "T1",
+                "display_name": "Synthetic topic",
+                "score": null,
+                "inference_status": "inferred_provider"
+              }
+            ],
+            "referenced_works": [],
+            "references_complete": true
+          },
+          "evidence": {
+            "id": "openalex:work:W1001",
+            "provider": "openalex",
+            "provider_record_id": "W1001",
+            "source_url": "https://example.org/synthetic/W1001",
+            "observed_at": "2026-09-01T12:00:00Z",
+            "inference_status": "reported"
+          }
+        },
+        {
+          "paper": {
+            "identifiers": {
+              "openalex_id": {
+                "value": "W1002"
+              },
+              "doi": null
+            },
+            "title": "Synthetic related paper",
+            "publication_date": "2024-01-01",
+            "authors": [
+              {
+                "display_name": "Alex Researcher"
+              }
+            ],
+            "venue": {
+              "display_name": "Synthetic Journal"
+            },
+            "abstract": null,
+            "cited_by_count": null,
+            "topics": [
+              {
+                "id": "T1",
+                "display_name": "Synthetic topic",
+                "score": null,
+                "inference_status": "inferred_provider"
+              }
+            ],
+            "referenced_works": [],
+            "references_complete": true
+          },
+          "evidence": {
+            "id": "openalex:work:W1002",
+            "provider": "openalex",
+            "provider_record_id": "W1002",
+            "source_url": "https://example.org/synthetic/W1002",
+            "observed_at": "2026-09-01T12:00:00Z",
+            "inference_status": "reported"
+          }
+        }
+      ],
+      "next_page": null,
+      "status": "complete",
+      "stop_reasons": [],
+      "limits": {
+        "page_size": 10,
+        "max_results": 100,
+        "max_requests": 20,
+        "max_seconds": 30
+      },
+      "requests": 1
+    }
+  },
+  "resolve": {
+    "path": "/v1/papers/resolve",
+    "status": 200,
+    "body": {
+      "paper": {
+        "identifiers": {
+          "openalex_id": {
+            "value": "W1001"
+          },
+          "doi": null
+        },
+        "title": "Synthetic seed paper",
+        "publication_date": "2024-01-01",
+        "authors": [
+          {
+            "display_name": "Alex Researcher"
+          }
+        ],
+        "venue": {
+          "display_name": "Synthetic Journal"
+        },
+        "abstract": null,
+        "cited_by_count": 0,
+        "topics": [
+          {
+            "id": "T1",
+            "display_name": "Synthetic topic",
+            "score": null,
+            "inference_status": "inferred_provider"
+          }
+        ],
+        "referenced_works": [],
+        "references_complete": true
+      },
+      "evidence": {
+        "id": "openalex:work:W1001",
+        "provider": "openalex",
+        "provider_record_id": "W1001",
+        "source_url": "https://example.org/synthetic/W1001",
+        "observed_at": "2026-09-01T12:00:00Z",
+        "inference_status": "reported"
+      }
+    }
+  },
+  "graph": {
+    "path": "/v1/graphs/explore",
+    "status": 200,
+    "body": {
+      "seed": {
+        "value": "W1001"
+      },
+      "nodes": [
+        {
+          "paper": {
+            "identifiers": {
+              "openalex_id": {
+                "value": "W1001"
+              },
+              "doi": null
+            },
+            "title": "Synthetic seed paper",
+            "publication_date": "2024-01-01",
+            "authors": [
+              {
+                "display_name": "Alex Researcher"
+              }
+            ],
+            "venue": {
+              "display_name": "Synthetic Journal"
+            },
+            "abstract": null,
+            "cited_by_count": 0,
+            "topics": [
+              {
+                "id": "T1",
+                "display_name": "Synthetic topic",
+                "score": null,
+                "inference_status": "inferred_provider"
+              }
+            ],
+            "referenced_works": [],
+            "references_complete": true
+          },
+          "evidence": {
+            "id": "openalex:work:W1001",
+            "provider": "openalex",
+            "provider_record_id": "W1001",
+            "source_url": "https://example.org/synthetic/W1001",
+            "observed_at": "2026-09-01T12:00:00Z",
+            "inference_status": "reported"
+          }
+        },
+        {
+          "paper": {
+            "identifiers": {
+              "openalex_id": {
+                "value": "W1002"
+              },
+              "doi": null
+            },
+            "title": "Synthetic related paper",
+            "publication_date": "2024-01-01",
+            "authors": [
+              {
+                "display_name": "Alex Researcher"
+              }
+            ],
+            "venue": {
+              "display_name": "Synthetic Journal"
+            },
+            "abstract": null,
+            "cited_by_count": null,
+            "topics": [
+              {
+                "id": "T1",
+                "display_name": "Synthetic topic",
+                "score": null,
+                "inference_status": "inferred_provider"
+              }
+            ],
+            "referenced_works": [],
+            "references_complete": true
+          },
+          "evidence": {
+            "id": "openalex:work:W1002",
+            "provider": "openalex",
+            "provider_record_id": "W1002",
+            "source_url": "https://example.org/synthetic/W1002",
+            "observed_at": "2026-09-01T12:00:00Z",
+            "inference_status": "reported"
+          }
+        }
+      ],
+      "edges": [
+        {
+          "source": {
+            "value": "W1001"
+          },
+          "target": {
+            "value": "W1002"
+          },
+          "referenced_id": {
+            "value": "W1002"
+          },
+          "evidence": {
+            "id": "openalex:work:W1001",
+            "provider": "openalex",
+            "provider_record_id": "W1001",
+            "source_url": "https://example.org/synthetic/W1001",
+            "observed_at": "2026-09-01T12:00:00Z",
+            "inference_status": "reported"
+          }
+        }
+      ],
+      "unresolved": [],
+      "incomplete_metadata": [
+        {
+          "work_id": {
+            "value": "W1002"
+          },
+          "fields": [
+            "cited_by_count"
+          ]
+        }
+      ],
+      "status": "complete",
+      "stop_reasons": [],
+      "limits": {
+        "depth": 1,
+        "max_nodes": 50,
+        "max_edges": 200,
+        "max_requests": 100,
+        "max_seconds": 30
+      },
+      "requests": 2,
+      "elapsed_seconds": 0.1,
+      "mode": "outgoing",
+      "unread_incoming_pages": [],
+      "filters": null,
+      "filter_scope": "returned_results",
+      "acquired_nodes": 2,
+      "acquired_edges": 1
+    }
+  },
+  "partial": {
+    "path": "/v1/graphs/explore",
+    "status": 200,
+    "body": {
+      "seed": {
+        "value": "W1001"
+      },
+      "nodes": [
+        {
+          "paper": {
+            "identifiers": {
+              "openalex_id": {
+                "value": "W1001"
+              },
+              "doi": null
+            },
+            "title": "Synthetic seed paper",
+            "publication_date": "2024-01-01",
+            "authors": [
+              {
+                "display_name": "Alex Researcher"
+              }
+            ],
+            "venue": {
+              "display_name": "Synthetic Journal"
+            },
+            "abstract": null,
+            "cited_by_count": 0,
+            "topics": [
+              {
+                "id": "T1",
+                "display_name": "Synthetic topic",
+                "score": null,
+                "inference_status": "inferred_provider"
+              }
+            ],
+            "referenced_works": [],
+            "references_complete": true
+          },
+          "evidence": {
+            "id": "openalex:work:W1001",
+            "provider": "openalex",
+            "provider_record_id": "W1001",
+            "source_url": "https://example.org/synthetic/W1001",
+            "observed_at": "2026-09-01T12:00:00Z",
+            "inference_status": "reported"
+          }
+        },
+        {
+          "paper": {
+            "identifiers": {
+              "openalex_id": {
+                "value": "W1002"
+              },
+              "doi": null
+            },
+            "title": "Synthetic related paper",
+            "publication_date": "2024-01-01",
+            "authors": [
+              {
+                "display_name": "Alex Researcher"
+              }
+            ],
+            "venue": {
+              "display_name": "Synthetic Journal"
+            },
+            "abstract": null,
+            "cited_by_count": null,
+            "topics": [
+              {
+                "id": "T1",
+                "display_name": "Synthetic topic",
+                "score": null,
+                "inference_status": "inferred_provider"
+              }
+            ],
+            "referenced_works": [],
+            "references_complete": true
+          },
+          "evidence": {
+            "id": "openalex:work:W1002",
+            "provider": "openalex",
+            "provider_record_id": "W1002",
+            "source_url": "https://example.org/synthetic/W1002",
+            "observed_at": "2026-09-01T12:00:00Z",
+            "inference_status": "reported"
+          }
+        }
+      ],
+      "edges": [
+        {
+          "source": {
+            "value": "W1001"
+          },
+          "target": {
+            "value": "W1002"
+          },
+          "referenced_id": {
+            "value": "W1002"
+          },
+          "evidence": {
+            "id": "openalex:work:W1001",
+            "provider": "openalex",
+            "provider_record_id": "W1001",
+            "source_url": "https://example.org/synthetic/W1001",
+            "observed_at": "2026-09-01T12:00:00Z",
+            "inference_status": "reported"
+          }
+        }
+      ],
+      "unresolved": [
+        {
+          "source": {
+            "value": "W1001"
+          },
+          "target": "W9999",
+          "reason": "request_limit"
+        }
+      ],
+      "incomplete_metadata": [
+        {
+          "work_id": {
+            "value": "W1002"
+          },
+          "fields": [
+            "cited_by_count"
+          ]
+        }
+      ],
+      "status": "truncated",
+      "stop_reasons": [
+        "max_requests"
+      ],
+      "limits": {
+        "depth": 1,
+        "max_nodes": 50,
+        "max_edges": 200,
+        "max_requests": 100,
+        "max_seconds": 30
+      },
+      "requests": 2,
+      "elapsed_seconds": 0.1,
+      "mode": "outgoing",
+      "unread_incoming_pages": [
+        {
+          "target": {
+            "value": "W1001"
+          },
+          "cursor": "synthetic-cursor",
+          "reason": "request_limit"
+        }
+      ],
+      "filters": null,
+      "filter_scope": "returned_results",
+      "acquired_nodes": 2,
+      "acquired_edges": 1
+    }
+  },
+  "failedGraph": {
+    "path": "/v1/graphs/explore",
+    "status": 502,
+    "body": {
+      "seed": {
+        "value": "W1001"
+      },
+      "nodes": [
+        {
+          "paper": {
+            "identifiers": {
+              "openalex_id": {
+                "value": "W1001"
+              },
+              "doi": null
+            },
+            "title": "Synthetic seed paper",
+            "publication_date": "2024-01-01",
+            "authors": [
+              {
+                "display_name": "Alex Researcher"
+              }
+            ],
+            "venue": {
+              "display_name": "Synthetic Journal"
+            },
+            "abstract": null,
+            "cited_by_count": 0,
+            "topics": [
+              {
+                "id": "T1",
+                "display_name": "Synthetic topic",
+                "score": null,
+                "inference_status": "inferred_provider"
+              }
+            ],
+            "referenced_works": [],
+            "references_complete": true
+          },
+          "evidence": {
+            "id": "openalex:work:W1001",
+            "provider": "openalex",
+            "provider_record_id": "W1001",
+            "source_url": "https://example.org/synthetic/W1001",
+            "observed_at": "2026-09-01T12:00:00Z",
+            "inference_status": "reported"
+          }
+        },
+        {
+          "paper": {
+            "identifiers": {
+              "openalex_id": {
+                "value": "W1002"
+              },
+              "doi": null
+            },
+            "title": "Synthetic related paper",
+            "publication_date": "2024-01-01",
+            "authors": [
+              {
+                "display_name": "Alex Researcher"
+              }
+            ],
+            "venue": {
+              "display_name": "Synthetic Journal"
+            },
+            "abstract": null,
+            "cited_by_count": null,
+            "topics": [
+              {
+                "id": "T1",
+                "display_name": "Synthetic topic",
+                "score": null,
+                "inference_status": "inferred_provider"
+              }
+            ],
+            "referenced_works": [],
+            "references_complete": true
+          },
+          "evidence": {
+            "id": "openalex:work:W1002",
+            "provider": "openalex",
+            "provider_record_id": "W1002",
+            "source_url": "https://example.org/synthetic/W1002",
+            "observed_at": "2026-09-01T12:00:00Z",
+            "inference_status": "reported"
+          }
+        }
+      ],
+      "edges": [
+        {
+          "source": {
+            "value": "W1001"
+          },
+          "target": {
+            "value": "W1002"
+          },
+          "referenced_id": {
+            "value": "W1002"
+          },
+          "evidence": {
+            "id": "openalex:work:W1001",
+            "provider": "openalex",
+            "provider_record_id": "W1001",
+            "source_url": "https://example.org/synthetic/W1001",
+            "observed_at": "2026-09-01T12:00:00Z",
+            "inference_status": "reported"
+          }
+        }
+      ],
+      "unresolved": [
+        {
+          "source": {
+            "value": "W1001"
+          },
+          "target": "W9999",
+          "reason": "request_limit"
+        }
+      ],
+      "incomplete_metadata": [
+        {
+          "work_id": {
+            "value": "W1002"
+          },
+          "fields": [
+            "cited_by_count"
+          ]
+        }
+      ],
+      "status": "failed",
+      "stop_reasons": [
+        "provider_error"
+      ],
+      "limits": {
+        "depth": 1,
+        "max_nodes": 50,
+        "max_edges": 200,
+        "max_requests": 100,
+        "max_seconds": 30
+      },
+      "requests": 2,
+      "elapsed_seconds": 0.1,
+      "mode": "outgoing",
+      "unread_incoming_pages": [
+        {
+          "target": {
+            "value": "W1001"
+          },
+          "cursor": "synthetic-cursor",
+          "reason": "request_limit"
+        }
+      ],
+      "filters": null,
+      "filter_scope": "returned_results",
+      "acquired_nodes": 2,
+      "acquired_edges": 1
+    }
+  },
+  "missingGraph": {
+    "path": "/v1/graphs/explore",
+    "status": 404,
+    "body": {
+      "seed": null,
+      "nodes": [],
+      "edges": [],
+      "unresolved": [
+        {
+          "source": null,
+          "target": "W9999",
+          "reason": "not_found"
+        }
+      ],
+      "incomplete_metadata": [],
+      "status": "failed",
+      "stop_reasons": [
+        "seed_not_found"
+      ],
+      "limits": {
+        "depth": 1,
+        "max_nodes": 50,
+        "max_edges": 200,
+        "max_requests": 100,
+        "max_seconds": 30
+      },
+      "requests": 2,
+      "elapsed_seconds": 0.1,
+      "mode": "outgoing",
+      "unread_incoming_pages": [],
+      "filters": null,
+      "filter_scope": "returned_results",
+      "acquired_nodes": 0,
+      "acquired_edges": 0
+    }
+  },
+  "invalid": {
+    "path": "/v1/papers/resolve",
+    "status": 422,
+    "body": {
+      "error": {
+        "code": "invalid_identifier",
+        "message": "Identifier is not valid."
+      }
+    }
+  },
+  "missing": {
+    "path": "/v1/papers/resolve",
+    "status": 404,
+    "body": {
+      "error": {
+        "code": "paper_not_found",
+        "message": "Paper was not found."
+      }
+    }
+  },
+  "providerError": {
+    "path": "/v1/papers/search",
+    "status": 429,
+    "body": {
+      "error": {
+        "code": "rate_limited",
+        "message": "Provider rate limit reached. Try again later."
+      }
+    }
+  }
+}

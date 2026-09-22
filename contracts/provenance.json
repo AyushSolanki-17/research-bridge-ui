@@ -1,0 +1,10 @@
+{
+  "status": "temporary-unreleased-snapshot",
+  "repository": "https://github.com/AyushSolanki-17/research-bridge-ai",
+  "commit": "b7bed499f21b51190b6a99f21237a9c20159cae3",
+  "sourcePath": "contracts/openapi.json",
+  "apiVersion": "0.1.0",
+  "sha256": "9361b9d168112f7a10597d4449e700d296979a4512d28be472f007942dff3ee6",
+  "generator": "openapi-typescript",
+  "generatorVersion": "7.13.0"
+}

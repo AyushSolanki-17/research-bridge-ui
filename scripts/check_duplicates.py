@@ -40,6 +40,17 @@ def tokens(path):
 
 
 def find_duplicates(roots):
+    """Find repeated handwritten source while leaving schema output to regeneration checks.
+
+    Args:
+        roots: Repository roots whose source trees should be scanned.
+
+    Returns:
+        Mapping of duplicate file pairs to their first matching line spans.
+
+    Raises:
+        ValueError: A root is missing or a scanned source path is a symlink.
+    """
     seen = defaultdict(list)
     findings = {}
     for root in roots:
@@ -51,6 +62,9 @@ def find_duplicates(roots):
                 continue
             if path.is_symlink():
                 raise ValueError(f"Source symlink requires review: {path}")
+            # This exact artifact is owned by the pinned OpenAPI generator, not hand edits.
+            if path.relative_to(source).as_posix() == "infrastructure/api-client/schema.d.ts":
+                continue
             stream = tokens(path)
             for start in range(len(stream) - MIN_TOKENS + 1):
                 window = stream[start : start + MIN_TOKENS]

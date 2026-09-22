@@ -33,7 +33,7 @@ Apply DRY to knowledge and behavior, not superficial similarity. Keep adapters/t
 python3 scripts/check_duplicates.py
 ```
 
-The duplicate guard rejects exact code-token sequences of at least 100 tokens spanning 12 lines, including copies within one file. It scans application source, ignoring comments and whitespace. It excludes tests and documentation. Renamed logic, small repetitions, dynamic imports, and semantic duplication still require review. Do not lower thresholds or add exemptions to silence a new finding without an ownership/design review.
+The duplicate guard rejects exact code-token sequences of at least 100 tokens spanning 12 lines, including copies within one file. It scans application source, ignoring comments and whitespace. It excludes tests, documentation and the exact generated artifact `src/infrastructure/api-client/schema.d.ts`. That artifact repeats backend response declarations by design and is verified byte-for-byte by `npm run check:contract`; handwritten adapters remain in the duplicate scan. Renamed logic, small repetitions, dynamic imports, and semantic duplication still require review. Do not lower thresholds or add exemptions to silence a new finding without an ownership/design review.
 
 Instructions, skills and development tooling are maintained directly in this repository. Update their documentation and affected checks together. No parent checkout or template generator is needed. Generated API clients still come from pinned schemas.
 

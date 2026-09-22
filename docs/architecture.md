@@ -1,6 +1,6 @@
 # Architecture
 
-Status: configured Next.js application with a starter page, process health route, npm lockfile, production build, ESLint/TypeScript checks and browser smoke tests. Business features remain unimplemented. See [runtime commands](../README.md).
+Status: configured Next.js application with a local seed-entry/scope-review screen, process health route, npm lockfile, production build, ESLint/TypeScript checks and browser smoke tests. Paper lookup, citation traversal and evidence inspection await the backend contract. See [runtime commands](../README.md).
 
 ```text
 src/

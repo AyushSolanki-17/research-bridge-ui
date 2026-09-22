@@ -1,6 +1,6 @@
 # Next steps
 
-The runtime is configured; business features are not implemented.
+The runtime and local seed-entry/scope-review screen are implemented. Backend research interactions remain unimplemented.
 
 ## Next assignment
 
@@ -8,13 +8,13 @@ The runtime is configured; business features are not implemented.
 
 **Owner:** `research-explorer`, `evidence-viewer`, generated API client and route
 composition.
-**Status:** assigned; implementation awaits a supplied backend schema or approved
+**Status:** local seed-entry and direction/depth draft review are implemented. Research integration awaits a supplied backend schema or approved
 schema-conforming fixture. Neither artifact is checked in. Live contract integration
 requires an immutable Research Bridge AI schema release.
 
 The runtime shell, health endpoint, lint/type checks, production build configuration,
 browser smoke tests and Conventional Commit checks are present. Business features
-remain scaffolds. Obtain the contract input before introducing transport models or
+remain incomplete. The entry screen validates nonblank input and reviews a local draft without resolving a paper or fetching citations. Obtain the contract input before introducing transport models or
 fixture-backed interactions; do not infer the schema from the journey description.
 
 **Outcome:** a user can find or enter a seed paper, explicitly choose the intended

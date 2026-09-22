@@ -11,7 +11,7 @@ npm ci
 npm run dev
 ```
 
-Open http://localhost:3000. The app currently serves a starter page and `GET /health`; research screens are not implemented. No environment variables or backend connection are required for development. Dependencies are pinned in `package-lock.json`.
+Open http://localhost:3000. The app serves a seed-entry screen with local citation-scope review and `GET /health`. Paper lookup, graph exploration and evidence inspection await the backend contract; draft review sends no research request. No environment variables or backend connection are required for development. Dependencies are pinned in `package-lock.json`.
 
 ## Checks
 

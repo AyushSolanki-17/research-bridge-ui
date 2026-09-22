@@ -19,3 +19,9 @@ out/
 .vercel/
 *.pem
 npm-debug.log*
+
+# Additional dependency and debug files from the remote repository.
+/.pnp
+.pnp.js
+yarn-debug.log*
+yarn-error.log*
